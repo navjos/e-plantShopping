@@ -160,18 +160,26 @@ body {
     width: 650px;
     font-size: 19px;
 }
-.cart{
+.cart {
     color: white;
     display: flex;
+    position: relative; /* Ensure the cart icon is the reference for absolute positioning */
 }
-.cart_quantity_count{
-    margin-top: 16px;
-    /* background-color: red; */
-    margin-left: 27px;
-    position: absolute;
-    font-size: 29px;
 
+.cart_quantity_count {
+    margin-top: -10px; /* Adjust this to move the quantity upwards */
+    margin-left: 27px; 
+    position: absolute;
+    top: -10px; /* Adjust this to position it higher or lower over the cart icon */
+    right: -10px; /* Adjust this to position it closer or further from the icon */
+    background-color: red; /* Optional: Gives the quantity a background for visibility */
+    color: white; /* Text color */
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 18px; /* Adjust the font size if needed */
+    font-weight: bold;
 }
+
 .plantname_heading{
    display: flex;
    align-items: center;
